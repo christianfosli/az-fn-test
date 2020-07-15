@@ -13,7 +13,7 @@ namespace FunctionApp1
     public static class WatchInfo
     {
         [FunctionName("WatchInfo")]
-        public static async Task<IActionResult> Run(
+        public static async Task<ActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
